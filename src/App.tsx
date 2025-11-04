@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import AllCars from "./Modules/Dashboard/View/AllCars.tsx";
 import CreateCar from "./Modules/Dashboard/View/CreateCar.tsx";
 import ProtectedRouter from "./router/ProtectedRouter.tsx";
-import { ToastContainer } from "react-toastify";
 import Profile from "./Modules/Profile/View/Profile.tsx";
 import ProfileSettings from "./Modules/Profile/View/ProfileSettings.tsx";
 
@@ -27,7 +26,6 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <ToastContainer />
     </>
   );
 };
