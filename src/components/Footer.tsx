@@ -1,4 +1,3 @@
-// Icons
 import {
   FaTwitter,
   FaFacebookF,

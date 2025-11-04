@@ -53,6 +53,10 @@
               }
             }
           }
+          .error {
+            color: red;
+            font-size: 14px;
+          }
           .btn {
             &.error {
               button {

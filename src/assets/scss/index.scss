@@ -1,15 +1,15 @@
 // Global styles
-@import "./base";
+@use "./base";
 
 // Components
-@import "./components/header";
-@import "./components/footer";
-@import "./components/loader";
+@use "./components/header";
+@use "./components/footer";
+@use "./components/loader";
 
 // Pages
-@import "./pages/home";
-@import "./pages/all-cars";
-@import "./pages/create-car";
-@import "./pages/edit-car";
-@import "./pages/login";
-@import "./pages/not-found";
+@use "./pages/home";
+@use "./pages/all-cars";
+@use "./pages/create-car";
+@use "./pages/edit-car";
+@use "./pages/login";
+@use "./pages/not-found";

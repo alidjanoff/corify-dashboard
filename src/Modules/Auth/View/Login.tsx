@@ -7,13 +7,15 @@ const Login = () => {
           <div className="login-box">
             <form>
               <div className="user-box">
-                <input type="email" name="email" />
+                <input type="email" />
                 <label>Email</label>
               </div>
+              {false && <span>Error Message</span>}
               <div className="user-box">
-                <input type="password" name="password" />
+                <input type="password" />
                 <label>Password</label>
               </div>
+              {false && <span>Error Message</span>}
               <div>
                 <button>
                   Login

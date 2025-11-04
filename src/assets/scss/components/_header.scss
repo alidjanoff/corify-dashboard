@@ -109,6 +109,61 @@
           }
         }
       }
+      .avatar {
+        position: relative;
+        img,
+        svg {
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+        }
+        img {
+          object-fit: cover;
+          border-radius: 100%;
+        }
+        .userMenu {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 200px;
+          display: none;
+          flex-direction: column;
+          background-color: #202424;
+          border-radius: 8px;
+          &.active {
+            display: flex;
+          }
+          .userMenuItem {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            a {
+              display: inline-block;
+              width: 100%;
+              padding: 12px;
+            }
+            &:nth-last-child(1) {
+              border-bottom-right-radius: 8px;
+              border-bottom-left-radius: 8px;
+              padding: 12px;
+              justify-content: space-between;
+            }
+            &:first-child {
+              border-top-right-radius: 8px;
+              border-top-left-radius: 8px;
+            }
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+            &:hover {
+              background-color: #ce8339;
+            }
+          }
+        }
+      }
     }
   }
   .cartBox {

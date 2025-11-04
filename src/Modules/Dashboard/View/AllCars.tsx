@@ -1,13 +1,9 @@
-// Icons
 import { FaTrash, FaEdit } from "react-icons/fa";
-
-// Router
 import { Link } from "react-router-dom";
 
 const AllCars = () => {
   return (
     <section className="allCars">
-      {/* {loading && <Loader />} */}
       <div className="container">
         <div className="row">
           <h2 className="title">All Cars List</h2>
@@ -26,13 +22,13 @@ const AllCars = () => {
               <tr>
                 <td>1</td>
                 <td className="carImg">
-                  <img src="" alt="carImg" />
+                  <img src="" alt="car-image" />
                 </td>
-                <td>Name</td>
-                <td>Details</td>
-                <td>$0.00</td>
+                <td>Car Name</td>
+                <td>Car Details</td>
+                <td>Car Price AZN</td>
                 <td className="edit">
-                  <Link to="/edit-car">
+                  <Link to={`/create-car`}>
                     <FaEdit />
                   </Link>
                   <FaTrash />
